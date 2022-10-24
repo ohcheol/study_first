@@ -61,3 +61,31 @@ push 하려고하는 브랜치 이름 앞에 +를 분여 push 하면 된다
        git status로 확인
        git add .
        git push -u origin master로 커밋
+       
+       ***
+       
+  ## git remote add 과정에서 다음과 같은 오류가 발생하였다
+
+  ### 원을을 파악하고 해결(조치) 방법은 제시하시오
+
+  #### 오류 코드 : Support for password autentication was removed on ~~~ fatal: Autentication failed for '~~~~~'
+
+  * 원인 : 2021년 8월 13일부로 git 작업을 인증할 때 계정암호를 허용하지 않는다 비밀번호 대신 토큰 기반 인증 사용
+
+    *문제 해결*
+   1. github 로그인 후 오른쪽 위 계정 클릭 -> Setting 클릭
+   2. 메뉴 아래쪽에 Developer settings 클릭
+   3. Personal access tokens 클릭
+   4. Generate new token 클릭 후 토큰 명 작성 후 허용할 범위 선택 (평범한 경우 repo만 선택해도 됨)
+   5. 생성 된 토큰 값 복사하기
+
+ *사용법*
+1. $ git clone https://github.com/username/repo.git
+2. Username: your_username
+3. Password: 발급 받은 토큰
+   ******
+   한번 생성 된 토큰은 까먹었다고 나중에 다시 볼 수 없으니 꼭 기억을 해두세요.
+![8-1](https://user-images.githubusercontent.com/105694802/197468025-924efe82-a561-4b90-a577-8b31447cb39d.jpg)
+![8-2](https://user-images.githubusercontent.com/105694802/197468029-97e901e9-3557-4ee4-80dd-01c2b524e836.jpg)
+![8-3](https://user-images.githubusercontent.com/105694802/197468035-fbd54f83-e607-4ba6-aaaa-b2ab0ad29cb3.jpg)
+
