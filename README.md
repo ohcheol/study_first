@@ -41,3 +41,23 @@ push 하려고하는 브랜치 이름 앞에 +를 분여 push 하면 된다
 
 ![7-1](https://user-images.githubusercontent.com/105694802/197466299-0df3fa98-295d-4ab7-9e04-0653218cfba1.jpg)
 ![7-2](https://user-images.githubusercontent.com/105694802/197466303-cb3db23d-6423-4fc0-b8af-2a58652c0cd6.jpg)
+
+***
+
+
+  ## git remote add 과정에서 다음과 같은 오류가 발생하였다
+
+  ### 원을을 파악하고 해결(조치) 방법은 제시하시오
+
+  #### error. failed to push some refs to '~~~'
+  #### hint: Updates were rejected because the remote contains work that you do not have locallyt
+
+    * 원인 : 원인 github에서 레파지토리를 생성할 때 README.md 파일을 생성했기 때문
+
+    *문제 해결*
+    1. git pull명령어로 원격 레파지토리를 내 로컬로 fetch한 다음 merge 한다 -git pull origin master
+
+    2. git pull origin master(or branch name) --allow-unrelated-histories
+       git status로 확인
+       git add .
+       git push -u origin master로 커밋
