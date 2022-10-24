@@ -10,5 +10,5 @@ readme 설명
     -원인 : git repository로 사용하기 위한 초기화 작업이 진행되지 않은 상태 오류
     1. 해당 디렉토리에 .git폴더가 있는지 여부 확인
     2. $ git init 명령어로 초기화 및 기본 설정 폴더인 .git 디렉토리 생성
-   ![오류](git-test/images/6.jpg)
+   ![6](https://user-images.githubusercontent.com/105694802/197465559-56a56745-ea6c-4795-9ad0-e6bc7424d68b.jpg)
     ![해결](/images/6-1.jpg)
