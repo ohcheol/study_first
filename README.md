@@ -52,7 +52,7 @@ push 하려고하는 브랜치 이름 앞에 +를 분여 push 하면 된다
   #### error. failed to push some refs to '~~~'
   #### hint: Updates were rejected because the remote contains work that you do not have locallyt
 
-    * 원인  github에서 레파지토리를 생성할 때 README.md 파일을 생성했기 때문*
+  * 원인github에서 레파지토리를 생성할 때 README.md 파일을 생성했기 때문*
 
     *문제 해결*
     1. git pull명령어로 원격 레파지토리를 내 로컬로 fetch한 다음 merge 한다 -git pull origin master
